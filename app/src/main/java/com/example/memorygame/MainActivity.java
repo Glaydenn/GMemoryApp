@@ -98,6 +98,7 @@ public class MainActivity extends AppCompatActivity {
                        tileOff(mRoundOrder, mCounter - 1);
                     }
                     mCounter++;
+
                 }
 
                 public void onFinish() {
@@ -108,7 +109,6 @@ public class MainActivity extends AppCompatActivity {
         else{
             Toast.makeText(this, R.string.try_again, Toast.LENGTH_LONG).show();
         }
-
     }
 
     public void tileOn(int[] order, int counter) {
@@ -194,6 +194,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void onNewGameClick(View view) {
         run = true;
+        mRound = 1;
         setTilesOff();
         runGame();
     }
